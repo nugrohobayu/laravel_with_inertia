@@ -8,6 +8,7 @@
         {{-- @routes --}}
         @viteReactRefresh
         @vite('resources/js/app.jsx')
+        @vite('resources/css/app.css')
         @inertiaHead
     </head>
     <body class="font-sans antialiased">

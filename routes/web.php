@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,5 +14,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', \App\Http\Controllers\HomeController::class);
+Route::get('/', [HomeController::class, 'index']);
+ROute::get('/show', [HomeController::class, 'show']);
 Route::inertia('/about', 'about');
